@@ -1,0 +1,30 @@
+.charactercell {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: left;
+  /* border: 5px dotted gray inset; */
+  margin: 64px 24px;
+}
+.charactercell-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 24px;
+  box-shadow: 0 0 0 2px var(--green) inset;
+  /* background-size: cover; */
+}
+.charactercell p:not(.charactercell-name) {
+  text-align: left;
+  font-size: 14px;
+  margin: 0;
+  margin-top: 4px;
+  color: gray;
+}
+p:not(.charactercell-name) span { color: black }
+.charactercell-name {
+  margin: 0;
+  margin: 16px 0 4px;
+  font-weight: 600;
+}

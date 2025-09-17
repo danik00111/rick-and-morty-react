@@ -1,0 +1,44 @@
+.episodes-tease {
+  color:white;
+  background-color: var(--black);
+  /* height: 768px; */
+  border-radius: 100px;
+  padding: 96px 0;
+}
+.episodes-header {
+  padding-left: 10vw;
+  max-width: 800px;
+}
+.episodes-carousel {
+  height: 384px;
+  overflow: hidden;
+  position: relative;
+  margin: 32px 0;
+}
+.episode-thumbnail {
+  width: 384px;
+  height: 384px;
+  object-fit: cover;
+  border-radius: 18px;
+  position: absolute;
+  border: 5px solid var(--green);
+  right: -400px;
+}
+@keyframes et1 { from { right: -400px } to { right: 1600px } }
+.episodes-button {
+  font-weight: 600;
+  position: relative;
+  left: 50%;
+  transform: translateX(calc(-50% - 12.5vw));
+}
+.widescreen-easter-egg {
+  font-weight: bold;
+  width: 384px;
+  transform: rotate(-0.25turn);
+  position: absolute;
+  top: 170px;
+  /* text-shadow: black 1px 1px 1px; */
+}
+.wide-easter-egg { right: 1420px }
+.ultrawide-easter-egg { right: 4200px }
+.maxwide-easter-egg { right: 7272px }

@@ -1,0 +1,19 @@
+.charfilters-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.charfilters-flexwrap-grouper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width:676px) {
+  .charfilter-input {
+    width: calc(100vw - 128px);
+  }
+  .charfilters-flexwrap-grouper {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,37 @@
+header {
+  height: 75px;
+  background-color: var(--black);
+  position: relative;
+  z-index: 5;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7.5vw;
+  background-color: var(--black);
+  color: white;
+  height: 96px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+.header-nav {
+  list-style: none;
+  display: inline-block;
+}
+.header-logo {
+  height: 75px;
+}
+/* @media screen and (max-width:567px) {
+  .header-nav {
+    display: none;
+  }
+} */
+@media screen and (max-width:456px) {
+  .header-logo {
+    height: 12.5vw;
+  }
+}

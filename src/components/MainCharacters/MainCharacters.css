@@ -1,0 +1,31 @@
+.main-chars {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.mainchars-content {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 32px;
+}
+.mainchars-images-cont {
+  transition: background-color ease-in-out 0.5s;
+}
+
+@media screen and (max-width:1111px) {
+  .mainchars-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main-chars {
+    margin: 0 64px;
+  }
+}
+@media screen and (max-width:500px) {
+  .mainchars-header {
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-64px) translateX(-50%);
+  }
+}
