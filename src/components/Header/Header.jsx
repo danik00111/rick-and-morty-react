@@ -8,7 +8,7 @@ const Header =({logo})=> (
   <header>
     <nav className={logo?'logo':'nologo'}>
       <ul>{
-        logo ?(<NavLink to='/'><img src='src/assets/rnm-logo.png' className='header-logo'/></NavLink>):(<>
+        logo ?(<NavLink to='/'><img src='/img/rnm-logo.png' className='header-logo'/></NavLink>):(<>
           <li className='header-nav'><LinkButton
             to='/characters' className='header-nav-button'
             bgc='var(--green)' color='var(--black)' border='0px black'

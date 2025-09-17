@@ -7,7 +7,7 @@ const EpisodesTeaser =()=> (<div className="episodes-tease">
   <div className="episodes-carousel">
     {Array(5).fill(0).map((_,i)=>(<img
       className="episode-thumbnail" key={i+1}
-      src={`src/assets/main-thumbnails-scroll/thumb${i+1}.png`}
+      src={`/img/main-thumbnails-scroll/thumb${i+1}.png`}
       style={{animation: `et1 10s -${i*2}s linear infinite`,backgroundSize:'cover'}}
       />))}
     <p className="widescreen-easter-egg wide-easter-egg">fun fact: your screen is wider than 1600px!</p>

@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
   {/* setinterval and useeffect can go unload a full shotgun into themselves */}
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename='/'>
         <App/>
       </BrowserRouter>
     </Provider>

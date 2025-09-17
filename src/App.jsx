@@ -2,7 +2,6 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Main from './pages/Main/Main';
 import Characters from './pages/Characters/Characters';
-import Episodes from './pages/Episodes/Episodes';
 import Footer from './components/Footer/Footer';
 import debounce from './functions/debounce';
 import { useDispatch } from 'react-redux';

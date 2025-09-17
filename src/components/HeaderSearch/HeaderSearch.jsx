@@ -3,7 +3,7 @@ import './HeaderSearch.css'
 
 const HeaderSearch =()=> (
   <div className="headersearch">
-    <img className="headersearch-icon" src='src/assets/search-icon.png'/>
+    <img className="headersearch-icon" src='/img/search-icon.png'/>
     <form>
       <input type="text" className="headersearch-input" placeholder="Search"/>
     </form>
