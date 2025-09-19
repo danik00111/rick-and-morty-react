@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import imageRNMfooter from '../../img/rick-and-morty-footer.png';
 
 const Footer =({light})=> (
   <footer className={light?'light':'dark'}>
@@ -10,7 +11,7 @@ const Footer =({light})=> (
         <div className='footer-rickmorty-tags'>
           <div className="footer-tag footer-tag1" style={{backgroundColor:(light?'var(--black)':'var(--green)'),color:(light?'white':'var(--black)')}}>Rick and</div>
           <div className="footer-tag footer-tag2" style={{backgroundColor:'var(--lime)',color:'var(--black)'}}>Morty</div>
-          <img className="footer-tags-img" src="/img/rick-and-morty-footer.png" alt="Rick and morty" />
+          <img className="footer-tags-img" src={imageRNMfooter} alt="Rick and morty" />
         </div>
       </Link>
       <ul className="footer-textlinks">
