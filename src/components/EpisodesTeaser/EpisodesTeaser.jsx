@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import './EpisodesTeaser.css';
 import LinkButton from "../LinkButton/LinkButton";
+import imageThumbnail1 from '../../img/main-thumbnails-scroll/thumb1.png';
 
 const EpisodesTeaser =()=> (<div className="episodes-tease">
   <h1 className="episodes-header">Ready to <span className="highlightgreen">explore</span> the crazy world of Rick and Morty?</h1>

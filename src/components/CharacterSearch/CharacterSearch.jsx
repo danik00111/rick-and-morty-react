@@ -20,7 +20,7 @@ const CharacterSearch =()=> {
     // console.log(firstchars.results);
     const isdesk = parseInt(window.innerWidth) > 1111;
     // dispatch({ type: 'isdesktop.set', payload: isdesk });
-    // loadmore();
+    loadmore();
     return () => { dispatch({type:'characters.list.reset'}) };
   },[])
   const loadmore = async() => {
