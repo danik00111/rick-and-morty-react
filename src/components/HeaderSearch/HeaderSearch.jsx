@@ -4,7 +4,7 @@ import imageSearch from '../../img/search-icon.png';
 import { Link } from 'react-router-dom';
 
 const HeaderSearch =()=> (
-  <Link to='/characters'>
+  <Link to='/characters#charfilter-input-name'>
     <div className="headersearch">
       <img className="headersearch-icon" src={imageSearch}/>
       <form>
