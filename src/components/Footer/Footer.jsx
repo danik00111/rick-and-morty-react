@@ -27,7 +27,7 @@ const Footer =({light})=> (
       </ul>
       <ul className="footer-medialinks">
         <li className="footer-medialink facebook">
-          <a href='https://facebook.com' style={{width:'48px',height:'48px',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:'0'}}>
+          <a href='https://facebook.com' target='_blank' class='footer-media-a'>
             {/* <img className="footer-medialink-icon" src="/img/footer-icons/facebook.svg" alt="facebook" /> */}
             <svg className="footer-medialink-icon" width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -38,7 +38,7 @@ const Footer =({light})=> (
           </a>
         </li>
         <li className="footer-medialink twitter">
-          <a href='https://twitter.com' style={{width:'48px',height:'48px',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:'0'}}>
+          <a href='https://twitter.com' target='_blank' class='footer-media-a'>
             {/* <img className="footer-medialink-icon" src="/img/footer-icons/twitter.svg" alt="twitter" /> */}
             <svg className="footer-medialink-icon" width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -50,7 +50,7 @@ const Footer =({light})=> (
           </a>
         </li>
         <li className="footer-medialink instagram">
-          <a href='https://instagram.com' style={{width:'48px',height:'48px',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:'0'}}>
+          <a href='https://instagram.com' target='_blank' class='footer-media-a'>
             {/* <img className="footer-medialink-icon" src="/img/footer-icons/instagram.svg" alt="instagram" /> */}
             <svg className="footer-medialink-icon" width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
