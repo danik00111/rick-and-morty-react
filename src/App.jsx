@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Main from './pages/Main/Main';
 import Characters from './pages/Characters/Characters';
@@ -23,9 +23,10 @@ function App() {
   return (<>
     <Header logo={location.pathname!='/'}/>
     <Routes>
-      <Route path='/' element={<Main/>}/>
+      <Route exact path='/' element={<Main/>}/>
       <Route path='/characters' element={<Characters/>}/>
       {/* <Route path='/episodes' element={<Episodes/>}/> */}
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
     <Footer light={location.pathname=='/'}/>
   </>)

@@ -6,8 +6,8 @@
   "homepage": "https://danik00111.github.io/rick-and-morty-react/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "predeploy": "vite build",
+    "build": "vite build; cp dist/index.html dist/404.html",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
