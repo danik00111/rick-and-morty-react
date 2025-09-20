@@ -42,3 +42,8 @@
 .wide-easter-egg { right: 1420px }
 .ultrawide-easter-egg { right: 4200px }
 .maxwide-easter-egg { right: 7272px }
+@media screen and (max-width:700px) {
+  .episodes-button {
+    transform: translateX(-50vw);
+  }
+}

@@ -5,6 +5,9 @@
   --green: #A1D737;
   --lime: #DAF836;
 }
+body {
+  overflow-x: hidden;
+}
 h1 {
   margin: 0;
   font-size: 44px; font-weight: 600;

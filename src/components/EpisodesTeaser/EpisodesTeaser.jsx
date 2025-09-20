@@ -24,11 +24,7 @@ const EpisodesTeaser =()=> (<div className="episodes-tease">
   </div>
   <LinkButton to="./characters" className="episodes-button"
     bgc='var(--green)' color='var(--black)' border='0px black'
-    extrastyle={{
-      position: 'relative',
-      left: '50%',
-      transform: 'translateX(calc(-50% - 128px))'
-  }}>Characters</LinkButton>
+  >Characters</LinkButton>
 </div>);
 
 export default EpisodesTeaser;
