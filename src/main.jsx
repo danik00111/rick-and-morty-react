@@ -8,12 +8,12 @@ import store from './redux/store.js';
 import { Provider } from 'react-redux'
 
 createRoot(document.getElementById('root')).render(
+  /* setinterval and useeffect can go unload a full shotgun into themselves */
   <StrictMode>
-  {/* setinterval and useeffect can go unload a full shotgun into themselves */}
     <Provider store={store}>
       <BrowserRouter basename={import.meta.env.BASE_URL /* thanks chatgpt :) */}>
         <App/>
       </BrowserRouter>
     </Provider>
-  </StrictMode>,
+  </StrictMode>
 )

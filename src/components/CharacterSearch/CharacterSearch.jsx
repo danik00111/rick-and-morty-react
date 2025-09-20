@@ -3,7 +3,7 @@ import * as rmAPI from 'rickmortyapi';
 import CharacterCell from '../CharacterCell/CharacterCell';
 import './CharacterSearch.css'
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 // const firstchars = (await rmAPI.getCharacters({page:1})).data;
 
@@ -12,10 +12,13 @@ const CharacterSearch =()=> {
   const isDesktop = useSelector(x=>x.isDesktop);
   const chars = useSelector(x=>x.charactersList);
   const filter = useSelector(x=>x.charactersFilter);
+  const useEffectRan = useRef(false);
   // async function firstFetch() {
   //   const firstchars = (await rmAPI.getCharacters({page:1})).data;
   // }
   useEffect(()=>{
+    if(useEffectRan.current) return;
+    useEffectRan.current = true;
     // firstFetch();
     // console.log(firstchars.results);
     const isdesk = parseInt(window.innerWidth) > 1111;
@@ -52,7 +55,11 @@ const CharacterSearch =()=> {
       <div className='characters-container'>
         {chars.map(x=><CharacterCell {...x} key={x.id} />)}
       </div>
-      <button className='loadmore' onClick={(async()=>{await loadmore()})}>Load {isDesktop ? '20' : '10'} more</button>
+      <button className='loadmore' onClick={(async(event)=>{
+        event.target.disabled = true;
+        await loadmore();
+        event.target.disabled = false;
+      })}>Load {isDesktop ? '20' : '10'} more</button>
     </>
   );
 };
