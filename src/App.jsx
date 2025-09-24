@@ -25,7 +25,6 @@ function App() {
     <Routes>
       <Route exact path='/' element={<Main/>}/>
       <Route path='/characters' element={<Characters/>}/>
-      {/* <Route path='/episodes' element={<Episodes/>}/> */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
     <Footer light={location.pathname=='/'}/>
